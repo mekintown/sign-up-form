@@ -4,9 +4,10 @@
   }
 
 :root {
-    --primary-clr: rgb(27, 27, 27);
-    --background-clr: white;
-    --valid-clr: #D0F0C0
+    --primary-clr: #202124;
+    --background-clr: #F1F1F1;
+    --confirm-clr: #36AF57;
+    --error-clr: #F63F3A;
 }
 
 * {
@@ -108,7 +109,8 @@ input[type="email"] {
     padding: 10px;
     border: none;
     cursor: pointer;
-    background-color: var(--valid-clr);
+    background-color: var(--confirm-clr);
+    color: white;
 }
 
 .btn-text {
@@ -129,4 +131,15 @@ input[type="email"] {
 
 .fa-brands {
     color: white;
+}
+
+.invalid {
+    border: 2px solid var(--error-clr) !important;
+}
+
+.error {
+    color: var(--error-clr);
+    height: 0.8rem;
+    font-size: 0.8rem;
+    margin-left: 10px;
 }
