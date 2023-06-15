@@ -143,3 +143,26 @@ input[type="email"] {
     font-size: 0.8rem;
     margin-left: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+    /* CSS rules for larger phones */
+    body {
+        flex-direction: column;
+    }
+    .right-panel,
+    .left-panel {
+        width: 100vw;
+    }
+
+    .left-panel {
+        height: 40vh;
+    }
+    .right-panel {
+        height: 80vh;
+    }
+    .sign-up-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+  }
