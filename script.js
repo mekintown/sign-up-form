@@ -6,7 +6,7 @@ const numberInput = document.querySelector(`.sign-up-form input[type="tel"]`);
 const numberError = document.querySelector(`.sign-up-form input[type="tel"] + div.error`);
 const errors = document.querySelector(`.sign-up-form + div.error`);
 
-emailInput.addEventListener("input", () => {
+emailInput.addEventListener("blur", () => {
     // Each time the user types something, we check if the
     // form fields are valid.
   
@@ -37,7 +37,7 @@ if (emailInput.validity.valueMissing) {
 textInputs.forEach( (textInput) => {
     
     const textError = textInput.nextElementSibling;
-    textInput.addEventListener("input", () => {
+    textInput.addEventListener("blur", () => {
     if (textInput.validity.valid) {
         textError.textContent = "";
         textInput.classList.remove("invalid")
@@ -61,7 +61,7 @@ function showError(textInput, textError ) {
     }
 }
 
-numberInput.addEventListener("input", () => {
+numberInput.addEventListener("blur", () => {
     // Each time the user types something, we check if the
     // form fields are valid.
     if (numberInput.validity.valid) {
