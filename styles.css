@@ -4,8 +4,9 @@
   }
 
 :root {
-    --primary-clr: black;
+    --primary-clr: rgb(27, 27, 27);
     --background-clr: white;
+    --valid-clr: #D0F0C0
 }
 
 * {
@@ -17,7 +18,6 @@
 
 body {
     display: flex;
-    padding: 20px;
 }
 
 footer {
@@ -33,7 +33,7 @@ footer {
 .sign-up-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 30px;
 }
 
 label {
@@ -43,6 +43,11 @@ label {
 
 .right-panel {
     width: 60vw;
+    background-color: var(--primary-clr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-panel {
@@ -61,6 +66,7 @@ img {
 .header {
     position: absolute;
     font-size: 1.5rem;
+    padding: 20px;
 }
 
 .image-container {
@@ -69,4 +75,58 @@ img {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.right-header {
+    color: white;
+    letter-spacing: 0.4rem;
+    margin-bottom: 60px;
+}
+
+.form-container {
+    width: 70%;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    appearance: none;
+    outline: none;
+    border-radius: 30px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    padding: 20px;
+}
+
+.create-account-btn {
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--valid-clr);
+}
+
+.btn-text {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.login {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.developer {
+    color: white;
+    font-size: 1rem;
+}
+
+.fa-brands {
+    color: white;
 }
